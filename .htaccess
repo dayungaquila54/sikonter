@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^auth/login$ login.php
+RewriteRule ^auth/verify$ auth.php
+
+RewriteRule ^invoices$ invoice.php
+RewriteRule ^order$ order.php
+RewriteRule ^purchases$ purchase.php
+RewriteRule ^pay/([^/]*)?$ pay.php?id=$1 [L]
